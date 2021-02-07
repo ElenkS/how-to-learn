@@ -69,14 +69,8 @@
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe id="ytplayer" type="text/html" width="515" height="316"
-            src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="video__iframe">
-            <iframe id="ytplayer-2" type="text/html" width="515" height="316"
-             src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen></iframe>
-          </div>
+            <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" class="video__iframe"></iframe>
+            <iframe src="https://www.youtube.com/embed/arj7oStGLkU" class="video__iframe"></iframe>
         </div>
       </section>
 
@@ -141,7 +135,7 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир-школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу "Весь мир-школа" нужно прочитать всем, кто занимается образованием-так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу "Весь мир-школа" нужно прочитать всем, кто занимается образованием-так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
@@ -152,7 +146,7 @@
       </section>
 
       <section class="kaufman">
-        <img src="./images/kaufman-triangle.svg"  alt="треугольник" class="kaufman__triangle rotation">
+        <div class="kaufman__triangle rotation"></div>
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <ul class="table table_theme_dark">
@@ -199,16 +193,31 @@
         </ul>
        </section>
 
-
        <section class="resources">
           <h2 class="section-title">Полезные ресурсы</h2>
           <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-          <div class="resources__logo-zone">
-            <img src="./images/resources-arzamas.svg" alt="логотип arzamas" class="resources__logo">
-            <img src="./images/resources-n1.svg" alt="логотип n1" class="resources__logo">
-            <img src="./images/resources-strelka.svg" alt="логотип strelka" class="resources__logo">
-            <img src="./images/resources-polka.svg" alt="логотип polka" class="resources__logo">
-          </div>
+          <ul class="resources__logo-zone">
+            <li>
+              <a href="#" class="resources__logo" target="_blank">
+                <img src="./images/resources-arzamas.svg" alt="логотип арзамас" class="resources__logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="resources__logo" target="_blank">  
+                <img src="./images/resources-n1.svg" alt="логотип н1" class="resources__logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="resources__logo" target="_blank">  
+                <img src="./images/resources-strelka.svg" alt="логотип стрелка" class="resources__logo">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="resources__logo" target="_blank">  
+                <img src="./images/resources-polka.svg" alt="логотип полка" class="resources__logo">
+              </a> 
+            </li> 
+          </ul>
         </section>
     </main>
     <footer class="footer">
@@ -236,7 +245,7 @@
           <ul class="footer__column-links">
             <li class="footer__column-links-item">
               <a class="footer__column-link" href="#" target="_blank">
-                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Facebook">Facebook
+                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Фейсбук">Facebook
               </a>
             </li>
             <li class="footer__column-links-item">
@@ -246,7 +255,7 @@
             </li>
             <li class="footer__column-links-item">
               <a class="footer__column-link" href="#" target="_blank">
-                <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Instagram">Instagram
+                <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Инстаграм">Instagram
               </a>
             </li>
           </ul>
