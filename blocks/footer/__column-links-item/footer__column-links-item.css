@@ -1,0 +1,6 @@
+.footer__column-links-item {
+    padding: 0;
+  }
+  .footer__column-links-item:nth-of-type(3n) {
+    margin-bottom: 16px;
+  }
